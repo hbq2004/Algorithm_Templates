@@ -1,6 +1,6 @@
 # SegmentTree
 
-参考：[春春打飞舞 - 刚整理到的超超超超好用的 jiangly 线段树板子 - Acwing](https://www.acwing.com/file_system/file/content/whole/index/content/10936804/) 
+参考并修改：[春春打飞舞 - 刚整理到的超超超超好用的 jiangly 线段树板子 - Acwing](https://www.acwing.com/file_system/file/content/whole/index/content/10936804/) 
 
 
 
