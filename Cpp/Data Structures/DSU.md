@@ -61,6 +61,7 @@ bool merge(int x, int y) {
 }
 ```
 
+以下待整理
 
 ## 带权并查集
 
