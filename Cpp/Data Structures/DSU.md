@@ -32,6 +32,7 @@ struct DSU {
         if (x == y) {
             return false;
         }
+        cnt--;
         siz[y] += siz[x];
         p[x] = y; // x -> y
         return true;
