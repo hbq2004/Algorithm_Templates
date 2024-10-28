@@ -52,6 +52,8 @@ dfs(0, 0, -1);
 
 ## RMQ LCA
 
+预处理 $\mathcal O(1)$ LCA
+
 ```cpp
 
 ```
