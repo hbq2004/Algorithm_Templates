@@ -66,6 +66,8 @@ bool merge(int x, int y) {
 
 ## 带权并查集
 
+带边权并查集：
+
 ```cpp
 struct DSU {
     vector<int> p, d;
@@ -94,8 +96,7 @@ struct DSU {
 };
 ```
 
-带点权并查集：
-
+带点权并查集 (特殊)：
 
 
 [Acwing 2069. 网络分析](https://www.acwing.com/activity/content/problem/content/2472/) 
