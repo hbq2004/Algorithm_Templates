@@ -34,7 +34,7 @@ struct Fenwick {
 };
 ```
 
-以下待整理，缺少 `find_first()`，`find_last()`，`select`。
+以下待整理，缺少 `find_first()`，`find_last()`，`select()`。
 
 cup-pyy
 
