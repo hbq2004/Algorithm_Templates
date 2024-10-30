@@ -67,8 +67,65 @@ bool merge(int x, int y) {
 ## 带权并查集
 
 ```cpp
+struct DSU {
+    vector<int> p, d;
+    DSU(int n) : p(n + 1), d(n + 1) {
+        iota(p.begin(), p.end(), 0);
+    }
 
+    int find(int x) {
+        if (x != p[x]) {
+            int t = p[x];
+            p[x] = find(p[x]);
+            d[x] += d[t];
+        }
+        return p[x];
+    }
+    
+    bool merge(int x, int y, int v) {
+        int px = find(x), py = find(y);
+        if (px == py) {
+            return (d[x] - d[y] == v);
+        }
+        p[px] = py;
+		d[px] = d[y] - d[x] + v;
+        return true;
+    }
+};
 ```
+
+带点权并查集：
+
+
+
+[Acwing 2069. 网络分析](https://www.acwing.com/activity/content/problem/content/2472/) 
+
+
+
+此题需要深刻理解 `find()` 函数路径压缩时的具体过程。
+
+```cpp
+int find(int x) {
+    if (p[x] == x || p[p[x]] == p[x]) {
+		return p[x];
+    }
+	int t = p[x];
+    p[x] = find(p[x]);
+    d[x] += d[t];
+    return p[x];
+}
+
+for (int i = 1; i <= n; i++) {
+    int t = find(i);
+    if (i == t) {
+        cout << d[i] << ' ';
+    } else {
+        cout << d[i] + d[t] << ' ';
+    }
+}
+cout << '\n';
+```
+
 
 ## 可持久化并查集
 
