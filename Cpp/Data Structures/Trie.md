@@ -14,7 +14,7 @@
 
 ```cpp
 struct Trie {
-    // Data Range <= 2^30 - 1 = 1,073,741,823 = 1e9
+    // Data Range <= 2^30 - 1 = 1'073'741'823 = 1e9
     int tr[N * 30][2], cnt[N * 30], idx = 0; 
 
     void clear() {
