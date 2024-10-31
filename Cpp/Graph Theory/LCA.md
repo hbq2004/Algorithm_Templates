@@ -64,3 +64,89 @@ dfs(0, 0, -1);
 ```cpp
 
 ```
+
+
+
+
+边差分：
+
+```cpp
+int dfs_d(int u, int p) {
+    int sum = d[u];
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int j = e[i];
+        if (j == p) {
+            continue;
+        }
+        int t = dfs(j, u);
+        if (check(t)) {
+            // 更新答案
+        }
+        sum += t;
+    }
+    return sum;
+}
+/*
+for query [a, b] :
+
+int p = lca(a, b);
+d[a]++, d[b]++, d[p] -= 2;
+*/
+```
+
+
+
+
+
+
+
+点差分：
+
+```cpp
+int dfs_d(int u, int p) {
+    int sum = d[u];
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int j = e[i];
+        if (j == p) {
+            continue;
+        }
+        int t = dfs(j, u);
+        sum += t;
+    }
+    if (check(sum)) {
+        // 更新答案
+    }
+    return sum;
+}
+
+/*
+for query [a, b] :
+
+int p = lca(a, b);
+d[a]++, d[b]++, d[p]--, d[fa[p][0]]--;
+*/
+```
+
+
+
+**点差分和边差分最后的求子树和都可以用 DFS 序列逆序遍历求和**。
+
+
+
+`dfn[]` + `fa[][]` 求子树和 / 求到根节点的路径和 ( 前缀和 )：
+
+
+
+```cpp
+// i 表示 DFS 序列中第 i 个节点
+
+// dfn 求子树和：
+for (int i = n; i >= 1; i--) {
+    sum[fa[i][0]] += sum[i];
+}
+
+// dfn 求到根节点的路径和：
+for (int i = 1; i <= n; i++) {
+    sum[i] += sum[fa[i][0]];
+}
+```
