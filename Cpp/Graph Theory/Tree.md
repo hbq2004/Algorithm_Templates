@@ -28,6 +28,7 @@ dfs(dfs, 0);
 CF 的某道题, Mike 出的 (>= 1900*)，如何存储树的直径上的所有节点
 
 ```cpp
+using PII = pair<int, int>
 #define x first
 #define y second
 
