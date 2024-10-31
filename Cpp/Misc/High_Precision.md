@@ -1,14 +1,9 @@
-
-
 # High Precision
-
 
 High Precision：高精度
 
 
-
 ## 1. Print
-
 
 
 ```cpp
@@ -21,15 +16,10 @@ void print(vector<int> &res) {
 ```
 
 
-
-
-
 ## 2. Cmp
 
 
-
 比较两个大数的大小
-
 
 
 ```cpp
@@ -47,13 +37,7 @@ bool cmp(vector<int> &a, vector<int> &b) { // a >= b
 ```
 
 
-
-
-
-
-
 ## 3. Add
-
 
 
 ```cpp
@@ -79,13 +63,7 @@ vector<int> add(vector<int> &a, vector<int> &b) {
 ```
 
 
-
-
-
 ## 4. Sub
-
-
-
 
 
 ```cpp
@@ -131,17 +109,10 @@ int main() {
 ```
 
 
-
-
-
 ## 5. Mul
 
 
-
-
-
 ### 1. A × b
-
 
 
 ```cpp
@@ -163,11 +134,7 @@ vector<int> mul(vector<int> &a, LL b) {
 ```
 
 
-
-
-
 ### 2. A × B
-
 
 
 ```cpp
@@ -192,18 +159,7 @@ vector<int> mul(vector<int> &a, vector<int> &b) {
 ```
 
 
-
-
-
-
-
 ## 6. Div
-
-
-
-
-
-
 
 
 
@@ -223,10 +179,4 @@ vector<int> div(vector<int> &a, int b, int &r) {
     return c;
 }
 ```
-
-
-
-
-
-
 
