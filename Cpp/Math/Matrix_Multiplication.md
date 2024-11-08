@@ -19,4 +19,3 @@ void mul(int c[][N], int a[][N], int b[][N]) { // c = a * b
     memcpy(c, temp, sizeof temp);
 }
 ```
-
