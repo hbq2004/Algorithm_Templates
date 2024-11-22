@@ -22,7 +22,7 @@ struct DSU {
     int find(int x) {
         return p[x] == x ? x : p[x] = find(p[x]);
     }
-
+    
     bool same(int x, int y) {
         return find(x) == find(y); 
     }
