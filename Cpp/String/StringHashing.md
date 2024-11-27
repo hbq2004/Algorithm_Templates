@@ -4,7 +4,7 @@
 template <int D, std::array<int, D> B, std::array<int, D> P>
 struct StringHash {
     std::vector<std::array<int, D>> h;
-
+    
     template <class T>
     StringHash(const T &s) : h(s.size() + 1) {
         for (int i = 0; i < s.size(); i++) {
