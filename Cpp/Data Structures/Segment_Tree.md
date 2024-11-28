@@ -98,7 +98,6 @@ struct Info {
     }
 };
 
-
 Info operator+(const Info &l, const Info &r) {
     Info u {};
 	// TODO : Merge Information

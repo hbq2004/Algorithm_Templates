@@ -10,12 +10,8 @@ using PII = pair<int, int>;
 
 constexpr int MOD = 998244353;
 constexpr u32 umx = UINT_MAX; // random_float
-```
 
-`mt19937` ( `#include <random>` )
-
-```cpp
-// unsigned int, unsigned long long
+// unsigned int, unsigned long long (#include <random>)
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 mt19937_64 rng_64(chrono::steady_clock::now().time_since_epoch().count());
 ```
