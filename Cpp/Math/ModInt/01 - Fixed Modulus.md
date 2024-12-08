@@ -29,13 +29,13 @@ constexpr u64 mulMod(u64 a, u64 b) {
 }
 
 template<typename U, U P>
-requires std::unsigned_integral<U>
+requires unsigned_integral<U>
 struct ModIntBase {
 public:
     constexpr ModIntBase() : x(0) {}
     
     template<typename T>
-    requires std::integral<T>
+    requires integral<T>
     constexpr ModIntBase(T x_) : x(norm(x_ % T {P})) {}
     
     constexpr static U norm(U x) {
@@ -101,7 +101,7 @@ public:
         return lhs;
     }
     
-    friend constexpr std::ostream &operator<<(std::ostream &os, const ModIntBase &a) {
+    friend constexpr ostream &operator<<(ostream &os, const ModIntBase &a) {
         return os << a.val();
     }
     
