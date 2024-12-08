@@ -127,7 +127,7 @@ using ModInt = ModIntBase<u32, P>;
 template<u64 P>
 using ModInt64 = ModIntBase<u64, P>;
 
-constexpr u32 P = 998244353;
+constexpr u32 P = 998'244'353;
 using Z = ModInt<P>;
 ```
 
