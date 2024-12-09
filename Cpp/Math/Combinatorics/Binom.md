@@ -69,14 +69,14 @@ for (int i = 1; i <= L; i++) {
 ```
 
 
-## 大范围预处理 (需要Modint)
+## 大范围预处理 (with ModIntBase)
 
 ```cpp
 struct Comb {
     int n;
-    std::vector<Z> _fac;
-    std::vector<Z> _invfac;
-    std::vector<Z> _inv;
+    vector<Z> _fac;
+    vector<Z> _invfac;
+    vector<Z> _inv;
     
     Comb() : n{0}, _fac{1}, _invfac{1}, _inv{0} {}
     Comb(int n) : Comb() {
