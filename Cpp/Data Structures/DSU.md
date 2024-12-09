@@ -90,7 +90,7 @@ struct DSU {
             return (d[x] - d[y] == v);
         }
         p[px] = py;
-		d[px] = d[y] - d[x] + v;
+        d[px] = d[y] - d[x] + v;
         return true;
     }
 };
@@ -108,9 +108,9 @@ struct DSU {
 ```cpp
 int find(int x) {
     if (p[x] == x || p[p[x]] == p[x]) {
-		return p[x];
+        return p[x];
     }
-	int t = p[x];
+    int t = p[x];
     p[x] = find(p[x]);
     d[x] += d[t];
     return p[x];
