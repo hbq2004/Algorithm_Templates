@@ -3,6 +3,8 @@
 
 ## 普通线段树板子
 
+无法区间合并——
+
 ```cpp
 template<class Info>
 struct SEG {
