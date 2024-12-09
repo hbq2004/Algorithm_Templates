@@ -4,5 +4,6 @@
 
 [jzz2.0 - 个人算法模板 - Acwing](https://www.acwing.com/blog/content/40704/) 
 
-[Ke_scholar - 合集-模板 - Cnblogs](https://www.cnblogs.com/Kescholar/collections/10314) 
+[春春打飞舞 - jiangly 线段树板子 - Acwing](https://www.acwing.com/blog/content/28255/) 
 
+[Ke_scholar - 合集-模板 - Cnblogs](https://www.cnblogs.com/Kescholar/collections/10314) 
