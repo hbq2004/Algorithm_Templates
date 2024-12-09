@@ -15,7 +15,7 @@ struct DSU {
     int cnt;
     
     DSU() {}
-    DSU(int n) : p(n + 1), siz(n + 1, 1), cnt(n) {
+    DSU(int n): p(n + 1), siz(n + 1, 1), cnt(n) {
         iota(p.begin(), p.end(), 0);
     }
 
@@ -71,7 +71,7 @@ bool merge(int x, int y) {
 ```cpp
 struct DSU {
     vector<int> p, d;
-    DSU(int n) : p(n + 1), d(n + 1) {
+    DSU(int n): p(n + 1), d(n + 1) {
         iota(p.begin(), p.end(), 0);
     }
 
