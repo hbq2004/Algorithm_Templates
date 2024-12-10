@@ -202,7 +202,8 @@ struct Tag {
 };
 
 struct Info {
-    int sum, act = 1;
+    // TODO: Information, Initialization
+    
     void apply(const Tag &t) & {
 
     }
