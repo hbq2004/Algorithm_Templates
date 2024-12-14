@@ -83,7 +83,7 @@ Info operator+(const Info &l, const Info &r) {
     Info u {};
     // TODO: Merge informations from bottom to top
 
-}
+};
 ```
 
 
