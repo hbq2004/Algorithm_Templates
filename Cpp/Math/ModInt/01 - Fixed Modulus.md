@@ -127,7 +127,7 @@ public:
 };
 
 template <>
-int ModuloInteger<int, 0>::Mod = 998244353;
+int ModuloInteger<int, 0>::Mod = 998'244'353;
 
 template <>
 long long ModuloInteger<long long, 0>::Mod = 4'179'340'454'199'820'289;
